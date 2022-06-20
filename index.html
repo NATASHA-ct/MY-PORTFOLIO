@@ -1,325 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PORTFOLIO WEBSITE</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>My Portfolio using Bootstrap</title>
+</head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <div class="logo">T-Developer</div>
 
-      <img class="menu" src="./images/mobile/menu-icon.png" alt="menu-icon">
+  <style>
+      * {
+        background-color: #191765;
+      }
 
-      <ul class="nav-list">
-        <li><a href="#"> Portfolio</a></li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Contact</a></li>
-        <li><a class="mail-link" href="#"><img class="mail" src="./images/desktop/mail-button.png" alt="clickable mail button"></a></li>
-      </ul>
+  </style>
 
+  <nav class="navbar navbar-expand-lg navbar-light text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">T-Developer</a>
 
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon  text-light"></span>
+      </button>
 
-    <!--About me-->
-    <section class="top-section">
-
-      <section class="introduction">
-        <h1 class="my-name">Natasha Chirombe</h1>
-        <h2 class="my-job-title">Software Developer</h2>
-        <p class="my-ability">I can help you build a product , feature or website Look through some of my work and
-          experience!
-          If you like what you
-          see and have a project you need coded, don’t hestiate to contact me.</p>
-      </section>
-
-      <!--vector line-->
-      <div class="short1">
-        <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
-      </div>
-
-      <div class="short2">
-        <img class="horizontal-line" src="./background-shapes/desktop-version/hr-1.png" alt="horizontal-line">
-      </div>
-
-      <!--my skills-->
-
-      <section class="my-skills">
-
-        <div class="languages">
-          <p class="skill-title">Language</p>
-          <ul class="skill-list">
-            <li>Javascript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
-        </div>
-
-        <div class="frameworks">
-          <p class="skill-title">Frameworks</p>
-          <ul class="skill-list">
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSPec</li>
-            <li>CopyBara</li>
-            <li>Selenium</li>
-          </ul>
-        </div>
-
-        <div class="skills">
-          <p class="skill-title">Skills</p>
-          <ul class="skill-list">
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
-        </div>
-      </section>
-
-      <!--vector line-->
-      <div class="short1">
-        <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
-      </div>
-
-      <div class="short2">
-        <img class="horizontal-line" src="./background-shapes/desktop-version/hr-1.png" alt="horizontal-line">
-      </div>
-
-      <div class="supporting-items">
-
-        <div class="go-to2">
-          <img class="arrow-down" src="./images/arrow-down.svg" alt="down pointing arrow" />
-          <h4 class="go-work">Work</h4>
-        </div>
-
-
-        <ul class="social">
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt=" github icon"></a></li>
-
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt=" linkedin icon"></a></li>
-
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="peace icon"></a></li>
-
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/twitter.png" alt="twitter icon"></a></li>
-
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link active text-light " aria-current="page" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-danger" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger " href="#">Contact</a>
+          </li>
 
         </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="go-to1">
 
-          <img class="arrow-down" src="./images/arrow-down.svg" alt="down pointing arrow" />
-          <h4 class="go-work">Work</h4>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">
+      <span class="fw-bold text-light">
+      T-Developer</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span navbar-toggler-icon></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
+  </div>
 
-      </div>
-    </section>
-
-  </header>
+</nav> -->
 
 
-  <main class="main">
-    <div class="title">
-      <h2 class="work-heading1">MY RECENT <br> WORK</h2>
-      <h2 class="work-heading2">My recent work</h2>
-
-      <!--vector line-->
-      <div class="short1 above-work">
-        <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
-      </div>
-
-      <div class="short2 long">
-        <img class="long-image" src="./background-shapes/desktop-version/below-my-recent work.png"
-          alt="horizontal-line">
-      </div>
-
-    </div>
-    <!--My Work-->
-    <div class="work-section">
-
-
-      <div class="all-projects">
-        <!--first project-->
-
-        <article id="project1" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-              
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--second project-->
-        <article id="project2" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--third project-->
-
-        <article id="project3" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--fourth project-->
-
-        <article id="project4" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-    </div>
-
-  </main>
-
-
-
-  <footer class="footer">
-
-    <section class="contact-section">
-
-      <div class="contact-instructions">
-        <h2 class="contact-us">CONTACT US</h2>
-        <h2 class="contact-us2">Let’s chat!</h2>
-
-        <p class="we-help">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-      </div>
-
-      <form action="https://formspree.io/f/xjvlllpk" method="POST" class="form">
-
-        <form action="https://formspree.io/f/xjvlllpk" method="POST" class="form">
-          <input type="text" class="name1" id="name1" name="name" maxlength="30" placeholder="Text input" required />
-          <input type="text" class="name2" id="name2" name="name" maxlength="30" placeholder="Jeremy" required />
-
-          <input class="email1" type="email" id="email1" name="email" placeholder="jeremy@gmail.com" required />
-          <input class="email2" type="email" id="email2" name="email" placeholder="Email Address" required />
-
-          <textarea class="textarea1" name="message" id="textarea1" maxlength="500" placeholder="Enter text here"
-            required></textarea>
-          <textarea class="textarea2" name="message" id="textarea2" maxlength="500"
-            placeholder="Write your message here" required></textarea>
-
-          <button id="see-project" class="see-prj" type="submit">See Project</button>
-          <button id="see-project2" class="see-prj" type="submit">Send</button>
-        </form>
-
-    </section>
-
-    <!--vector line-->
-    <div class="short1">
-      <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
-    </div>
-
-    <div class="short2 below-form">
-      <img class="below-form" src="./background-shapes/desktop-version/long-footer-line.png" alt="horizontal-line">
-    </div>
-
-    <!--social media icons-->
-
-    <div class="bottom-footer">
-      <div class="social footer-icons">
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt="github icon"></a>
-
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt="linkedin icon"></a>
-
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="peace icon"></a>
-
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/twitter.png" alt="twitter icon"></a>
-
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a>
-
-      </div>
-      <div class="my-email-container">
-        <p class="my-email">ntascha23@gmail.com</p>
-      </div>
-    </div>
-
-    <div class="short1">
-      <img class="below-page-line" src="./background-shapes/mobile-version/footer-line.png" alt="horizontal-line">
-    </div>
-
-  </footer>
-
+  
 </body>
-
 </html>
